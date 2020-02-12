@@ -1,0 +1,117 @@
+﻿
+.menu ul li a {
+    color: white;
+}
+
+.menu ul li {
+    margin: 0px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+    .menu ul li:hover {
+        background-color: #142B38;
+        padding: 0px 10px;
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+    }
+
+
+.main {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftside {
+    width: 20%;
+}
+
+    .leftside .leftmenu {
+        border: 1px solid gray;
+    }
+
+        .leftside .leftmenu li {
+            padding: 10px 0px;
+            padding-left: 15px;
+        }
+
+
+        .leftside .leftmenu :hover {
+            background-color: #DCDCDC;
+            size: 15px;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+
+.rightside {
+    width: 70%;
+    display: inline-block;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+    .rightside .image {
+        height: 350px;
+        width: 100%;
+        border: 1px solid gray;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightside img {
+        width: 150px;
+        height: 150px;
+    }
+
+.content {
+    width: 95%;
+    margin: 0 auto;
+}
+
+    .content p {
+        margin: 15px 0px;
+    }
+
+.footer {
+    width: 80%;
+    height: 50px;
+    background-color: #B4B8BC;
+}
+
+    .footer ul {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+        .footer ul li {
+            margin: 0px 15px;
+        }
+
+            .footer ul li:last-child {
+                margin-left: 20px;
+            }
+
+.bluetext {
+    color: #3381a7;
+    text-decoration: underline;
+}
+
+.h1 link {
+    color: black;
+}
+
+
+a {
+    color: black;
+}
+
+
+
+.image {
+    text-align: center;
+}
