@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up form</title>
+</head>
+<body>
+
+<nav>
+<h1>JOURNEY</h1>
+
+    <p> <span>Welcome, <a href=""> <span class="green-text-none">  Log in </span></a>  or  <a href=""> <span class="green-text-none"> Sign up </span></a> </p>
+</nav>
+<div class="sign-up-form">
+        <form action="">
+
+        <h1>Sign up</h1>
+        <p>Log In</p>
+       <a href=""> <p class="facebook"> f | Facebook</p>  <p class="google">G+ | Google</p></a>
+            <input type="text" class="input-box " id="fname" name="fname" placeholder="First Name"><br><br>
+            <input type="text" class="input-box " id="lname" name="lname" placeholder="Last Name"><br><br>
+            <input type="text" class="input-box " id="email" name="email" placeholder="Email"><br><br>
+            <input type="text" class="input-box " id="password" name="pass" placeholder="Password"><br><br>
+            <input type="text" class="input-box " id="confirm_pass" name="con_pass" placeholder="Confirm Password"><br><br>
+            <input type="checkbox" id="tick" name="tickmark" value="confirm">
+            <label for="tick"> Agree our <a href="" class="green-text" >Terms & Conditions</a> </label><br>
+            <a href="">  <button class="button">Create account</button></a>
+    </form>
+
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+body {
+    padding: 1366px;
+    height: 768px;
+    background-image: url("bck.jpg");
+    background-size:cover;
+    repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.4) ;
+}
+nav opacity {
+
+}
+
+nav h1{
+    color: white;
+    float: left;
+    padding:  0 20px;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Verdana';
+}
+
+nav p {
+    color: white;
+    float: right;
+    font-size: 45px;
+    align-content: center;
+}
+.sign-up-form {
+    width: 400px;
+    box-shadow: 0 0 3px 0;
+    background-color: white;
+    padding: 300px ;
+    margin: 13% auto;
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+
+.facebook {
+    background-color: #305db8;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    float:left;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.google {
+    background-color: #df4a32;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    float:right;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    margin: 15px;
+    padding:  20px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.input-box {
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+}
+.green-text {
+    text-decoration: underline;
+    color: green;
+}
+
+.green-text-none {
+    text-decoration: none;
+    color: green;
+}
+
+a {
+    text-decoration: none;
+}
+
+
