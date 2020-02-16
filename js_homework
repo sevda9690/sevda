@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="jsfile.js"> </script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+const NOT_ALLOWED_MSG='You are not allowed to visit this website. ';
+const BETWEEN_18_AND_22_Q ='Are you sure you want to continue?';
+const WELCOME_MSG='Welcome';
+const NAME_Q='What is your name?';
+const AGE_Q='What is your age?';
+
+
+const who=prompt(NAME_Q);
+const age=prompt(AGE_Q);
+
+    if (age < 18) {
+        const isCancelled = who == null;
+        alert(isCancelled ? NOT_ALLOWED_MSG : NOT_ALLOWED_MSG);
+
+    } else if (age >= 18 && age <= 22) {
+        prompt(BETWEEN_18_AND_22_Q)
+        const isCancelled = who == null;
+
+        if (!isCancelled) {
+            alert(`Welcome, ${who}`);
+        } else {
+            alert(NOT_ALLOWED_MSG);
+        }
+
+    } else alert(`Welcome, ${who}`);
+
+
