@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="jsfile.js"> </script>
+</head>
+<body>
+calculator();
+
+</body>
+</html>
+
+
+
+function calculator(num1,num2,operand) {
+
+    num1 = +prompt('Enter number 1');
+    if (isNaN(num1) || num1 == ' ') {
+        alert(num1 + ' is not a number <br/>');
+    } else {
+        let num2 = +prompt('Enter number 2');
+        if (isNaN(num2) || (num2 == ' ')) {
+            alert(num2 + ' is not a number <br/>');
+        } else {
+            let operand = prompt('Select operand');
+
+            if (operand == '+' || operand == '-' || operand == '*' || operand == '/') {
+                switch (operand) {
+                    case '+':
+                        let sum = num1 + num2;
+                        alert('Result ' + sum);
+                        break;
+                    case '-':
+                        let subt = num1 - num2;
+                        alert('Result ' + subt);
+                        break;
+                    case '*':
+                        let mul = num1 * num2;
+                        alert('Result ' + mul);
+                        break;
+                    case '/':
+                        if (num2!='0') {
+                            let divide = num1 / num2;
+                            alert('Result ' + divide);
+                        } else alert('You cannot divide by 0')
+                        break;
+                }
+            } else {
+                alert('Please enter a valid operation');
+            }
+        }
+    }
+
+}
