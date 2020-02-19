@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <script src="jsfile.js"> </script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+function createNewUser() {
+    let newUser;
+
+    newUser = {     // an object
+        firstName: prompt('Name'),
+        lastName: prompt('Surname')
+    };
+    fletter=newUser.firstName.charAt(0);
+    surname=newUser.lastName;
+
+    alert(this.fletter + ' ' + this.surname);
+
+}
+
+
+createNewUser();
